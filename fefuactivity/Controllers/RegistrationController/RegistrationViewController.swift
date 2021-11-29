@@ -47,7 +47,7 @@ class RegistrationViewController: UIViewController {
         let userInfo = notification.userInfo
         let keyboardFrameSize = (userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         
-        scrollView.contentInset.bottom = keyboardFrameSize.height
+        scrollView.contentOffset = CGPoint(x: 0, y: keyboardFrameSize.height)
         
     }
     
