@@ -9,9 +9,10 @@ import UIKit
 
 class RegistrationViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var genderTextField: PopUpTextField!
     
-    let gender = ["Мужской", "Женский"]
+    let gender = ["", "Мужской", "Женский"]
     
     let pickerView = UIPickerView()
     
@@ -23,6 +24,35 @@ class RegistrationViewController: UIViewController {
         pickerView.delegate = self
         pickerView.dataSource = self
         self.genderTextField.inputView = pickerView
+        
+        registerForKeyboardNotifications()
+    }
+    
+    deinit {
+        removeKeyboardNotifications()
+    }
+    
+    func registerForKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_: )), name: UIWindow.keyboardWillShowNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIWindow.keyboardDidHideNotification, object: nil)
+    }
+    
+    func removeKeyboardNotifications() {
+        NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardDidHideNotification, object: nil)
+    }
+    
+    @objc func keyboardWillShow(_ notification: Notification) {
+        let userInfo = notification.userInfo
+        let keyboardFrameSize = (userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        
+        scrollView.contentInset.bottom = keyboardFrameSize.height
+        
+    }
+    
+    @objc func keyboardWillHide() {
+        scrollView.contentOffset = CGPoint.zero
     }
 }
 
