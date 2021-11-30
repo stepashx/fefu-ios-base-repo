@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0zT-xx-m0g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0zT-xx-m0g">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -49,7 +49,8 @@
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BgImage" id="qO2-sN-tas">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="267"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Db4-KE-9pE">
                                 <rect key="frame" x="152" y="308.5" width="110" height="107"/>
@@ -74,7 +75,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8j-0t-0kS" customClass="BaseButton" customModule="fefuactivity" customModuleProvider="target">
                                 <rect key="frame" x="40" y="706.5" width="334" height="56"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="334" id="Gmn-S6-eAT"/>
                                     <constraint firstAttribute="height" constant="56" id="Z2b-Aw-qVR"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -104,6 +104,7 @@
                             <constraint firstItem="fbB-ix-FIT" firstAttribute="centerX" secondItem="Lw5-BR-hl7" secondAttribute="centerX" id="Qyg-sU-kWE"/>
                             <constraint firstItem="uck-pE-SDg" firstAttribute="centerX" secondItem="Lw5-BR-hl7" secondAttribute="centerX" id="UW9-iI-3i6"/>
                             <constraint firstItem="Db4-KE-9pE" firstAttribute="top" secondItem="qO2-sN-tas" secondAttribute="bottom" constant="41.700000000000003" id="VXh-ey-fBX"/>
+                            <constraint firstItem="dW9-ho-M6B" firstAttribute="centerX" secondItem="Lw5-BR-hl7" secondAttribute="centerX" id="Vkh-it-fzo"/>
                             <constraint firstItem="fKg-x6-IfV" firstAttribute="trailing" secondItem="f8j-0t-0kS" secondAttribute="trailing" constant="40" id="XQK-xt-nN9"/>
                             <constraint firstItem="fbB-ix-FIT" firstAttribute="leading" secondItem="fKg-x6-IfV" secondAttribute="leading" constant="40" id="Y12-cD-1LN"/>
                             <constraint firstItem="dW9-ho-M6B" firstAttribute="top" secondItem="Db4-KE-9pE" secondAttribute="bottom" constant="79.510000000000005" id="ZdP-eX-bfm"/>
