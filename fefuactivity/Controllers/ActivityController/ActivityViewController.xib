@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,41 +11,111 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivityViewController" customModule="fefuactivity" customModuleProvider="target">
             <connections>
+                <outlet property="activityTableView" destination="Yji-z7-KSA" id="eRR-CQ-Ojx"/>
+                <outlet property="emptyStateStackView" destination="SYo-dZ-snN" id="qZE-Pr-efb"/>
+                <outlet property="startButton" destination="yDD-9x-6y4" id="erd-OR-vjh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tabBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HY9-No-IjD">
-                    <rect key="frame" x="0.0" y="813" width="414" height="83"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <items>
-                        <tabBarItem title="Активность" id="so6-BA-J7Z">
-                            <imageReference key="image" image="circle" catalog="system" symbolScale="large"/>
-                        </tabBarItem>
-                        <tabBarItem title="Профиль" id="v6i-gU-Tw6">
-                            <imageReference key="image" image="circle" catalog="system" symbolScale="large"/>
-                        </tabBarItem>
-                    </items>
-                </tabBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csC-U8-Y2G">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDD-9x-6y4" customClass="BaseButton" customModule="fefuactivity" customModuleProvider="target">
+                            <rect key="frame" x="32" y="653" width="350" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="oos-WK-mjd"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Старт">
+                                <backgroundConfiguration key="background" cornerRadius="12">
+                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                </backgroundConfiguration>
+                                <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="didTappedStartButton:" destination="-1" eventType="touchUpInside" id="afX-K4-j74"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="SYo-dZ-snN">
+                            <rect key="frame" x="40" y="317" width="334" height="91"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время потренить" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uX-v9-Vp5">
+                                    <rect key="frame" x="0.0" y="0.0" width="334" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="eyi-Yt-WYf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCe-dv-Kph">
+                                    <rect key="frame" x="0.0" y="43" width="334" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="6zs-U8-Eqm"/>
+                                    </constraints>
+                                    <string key="text">Нажимай на кнопку ниже и начинаем
+трекать активность</string>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <viewLayoutGuide key="safeArea" id="YeE-Ff-QCo"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="91" id="KZp-xY-AI1"/>
+                                <constraint firstItem="3uX-v9-Vp5" firstAttribute="centerX" secondItem="SYo-dZ-snN" secondAttribute="centerX" id="Qtd-aG-xKU"/>
+                                <constraint firstItem="3uX-v9-Vp5" firstAttribute="top" secondItem="YeE-Ff-QCo" secondAttribute="top" id="R2p-c6-nFf"/>
+                            </constraints>
+                        </stackView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Yji-z7-KSA">
+                            <rect key="frame" x="16" y="16" width="382" height="621"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <constraints>
+                        <constraint firstItem="SYo-dZ-snN" firstAttribute="centerY" secondItem="csC-U8-Y2G" secondAttribute="centerY" id="6XT-Cy-F4h"/>
+                        <constraint firstAttribute="trailing" secondItem="Yji-z7-KSA" secondAttribute="trailing" constant="16" id="CMO-84-plA"/>
+                        <constraint firstItem="SYo-dZ-snN" firstAttribute="leading" secondItem="csC-U8-Y2G" secondAttribute="leading" constant="40" id="Dwf-QG-v4j"/>
+                        <constraint firstAttribute="trailing" secondItem="SYo-dZ-snN" secondAttribute="trailing" constant="40" id="K0c-lU-cyQ"/>
+                        <constraint firstItem="yDD-9x-6y4" firstAttribute="leading" secondItem="csC-U8-Y2G" secondAttribute="leading" constant="32" id="NrQ-1W-V63"/>
+                        <constraint firstItem="yDD-9x-6y4" firstAttribute="top" secondItem="Yji-z7-KSA" secondAttribute="bottom" constant="16" id="aYu-fA-cLI"/>
+                        <constraint firstItem="Yji-z7-KSA" firstAttribute="leading" secondItem="csC-U8-Y2G" secondAttribute="leading" constant="16" id="ajm-7g-Bz4"/>
+                        <constraint firstAttribute="bottom" secondItem="yDD-9x-6y4" secondAttribute="bottom" constant="16" id="ht5-AV-Vig"/>
+                        <constraint firstItem="SYo-dZ-snN" firstAttribute="centerX" secondItem="csC-U8-Y2G" secondAttribute="centerX" id="nRc-wc-lN1"/>
+                        <constraint firstItem="Yji-z7-KSA" firstAttribute="top" secondItem="csC-U8-Y2G" secondAttribute="top" constant="16" id="sOp-9D-SAQ"/>
+                        <constraint firstAttribute="trailing" secondItem="yDD-9x-6y4" secondAttribute="trailing" constant="32" id="w2Z-w7-bld"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="HY9-No-IjD" secondAttribute="bottom" id="zfY-oq-gbz"/>
+                <constraint firstItem="csC-U8-Y2G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6LX-z8-02M"/>
+                <constraint firstItem="csC-U8-Y2G" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="FRx-MG-dFL"/>
+                <constraint firstItem="csC-U8-Y2G" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="TNT-BY-DzJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="csC-U8-Y2G" secondAttribute="bottom" id="xa7-db-AkC"/>
             </constraints>
-            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="139" y="104"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+            <point key="canvasLocation" x="139" y="154"/>
         </view>
     </objects>
     <resources>
-        <image name="circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

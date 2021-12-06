@@ -17,9 +17,17 @@
 		4C3A308A27225FA300A5EFF0 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C3A308827225FA300A5EFF0 /* RegistrationViewController.xib */; };
 		4C3A308D27225FB800A5EFF0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A308B27225FB800A5EFF0 /* LoginViewController.swift */; };
 		4C3A308E27225FB800A5EFF0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C3A308C27225FB800A5EFF0 /* LoginViewController.xib */; };
+		4C584FA327588888003F2E9F /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C584FA127588888003F2E9F /* ActivityTableViewCell.swift */; };
+		4C584FA427588888003F2E9F /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C584FA227588888003F2E9F /* ActivityTableViewCell.xib */; };
+		4C584FA927588DAB003F2E9F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C584FA727588DAB003F2E9F /* MainViewController.swift */; };
+		4C584FAA27588DAB003F2E9F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C584FA827588DAB003F2E9F /* MainViewController.xib */; };
+		4C584FAE27589F8A003F2E9F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C584FAC27589F8A003F2E9F /* ProfileViewController.swift */; };
+		4C584FAF27589F8A003F2E9F /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C584FAD27589F8A003F2E9F /* ProfileViewController.xib */; };
+		4C584FB227589FD3003F2E9F /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C584FB027589FD2003F2E9F /* ActivityViewController.swift */; };
+		4C584FB327589FD3003F2E9F /* ActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C584FB127589FD2003F2E9F /* ActivityViewController.xib */; };
+		4C584FB72758E5D7003F2E9F /* ActivityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C584FB52758E5D7003F2E9F /* ActivityDetailsViewController.swift */; };
+		4C584FB82758E5D7003F2E9F /* ActivityDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C584FB62758E5D7003F2E9F /* ActivityDetailsViewController.xib */; };
 		4C67814F2724232300EC30F6 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C67814E2724232300EC30F6 /* BaseButton.swift */; };
-		4C88B0C9272FCEA90076B409 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C88B0C7272FCEA90076B409 /* ActivityViewController.swift */; };
-		4C88B0CA272FCEA90076B409 /* ActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C88B0C8272FCEA90076B409 /* ActivityViewController.xib */; };
 		4C88B0CC272FDD760076B409 /* ActivityBaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C88B0CB272FDD760076B409 /* ActivityBaseButton.swift */; };
 		4CD12114272BE4C7002ACB4C /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD12113272BE4C7002ACB4C /* PasswordTextField.swift */; };
 		4CD12116272D0A59002ACB4C /* PopUpTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD12115272D0A58002ACB4C /* PopUpTextField.swift */; };
@@ -39,9 +47,17 @@
 		4C3A308827225FA300A5EFF0 /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 		4C3A308B27225FB800A5EFF0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4C3A308C27225FB800A5EFF0 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		4C584FA127588888003F2E9F /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		4C584FA227588888003F2E9F /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
+		4C584FA727588DAB003F2E9F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4C584FA827588DAB003F2E9F /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		4C584FAC27589F8A003F2E9F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4C584FAD27589F8A003F2E9F /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		4C584FB027589FD2003F2E9F /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		4C584FB127589FD2003F2E9F /* ActivityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityViewController.xib; sourceTree = "<group>"; };
+		4C584FB52758E5D7003F2E9F /* ActivityDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailsViewController.swift; sourceTree = "<group>"; };
+		4C584FB62758E5D7003F2E9F /* ActivityDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityDetailsViewController.xib; sourceTree = "<group>"; };
 		4C67814E2724232300EC30F6 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
-		4C88B0C7272FCEA90076B409 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
-		4C88B0C8272FCEA90076B409 /* ActivityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityViewController.xib; sourceTree = "<group>"; };
 		4C88B0CB272FDD760076B409 /* ActivityBaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityBaseButton.swift; sourceTree = "<group>"; };
 		4CD12113272BE4C7002ACB4C /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		4CD12115272D0A58002ACB4C /* PopUpTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpTextField.swift; sourceTree = "<group>"; };
@@ -78,6 +94,7 @@
 		1DE4E5C3270A5CCE004A30CA /* fefuactivity */ = {
 			isa = PBXGroup;
 			children = (
+				4C584FA027587305003F2E9F /* Cells */,
 				4CD5D2BB272AD0FD00379DC1 /* TextFields */,
 				4C67814D2724230900EC30F6 /* Buttons */,
 				4C67814C27240DA000EC30F6 /* Controllers */,
@@ -110,10 +127,57 @@
 			path = LoginController;
 			sourceTree = "<group>";
 		};
+		4C584FA027587305003F2E9F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4C584FA527588891003F2E9F /* ActivityCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4C584FA527588891003F2E9F /* ActivityCell */ = {
+			isa = PBXGroup;
+			children = (
+				4C584FA127588888003F2E9F /* ActivityTableViewCell.swift */,
+				4C584FA227588888003F2E9F /* ActivityTableViewCell.xib */,
+			);
+			path = ActivityCell;
+			sourceTree = "<group>";
+		};
+		4C584FA627588D03003F2E9F /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				4C584FA727588DAB003F2E9F /* MainViewController.swift */,
+				4C584FA827588DAB003F2E9F /* MainViewController.xib */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		4C584FAB27589F54003F2E9F /* ProfileController */ = {
+			isa = PBXGroup;
+			children = (
+				4C584FAC27589F8A003F2E9F /* ProfileViewController.swift */,
+				4C584FAD27589F8A003F2E9F /* ProfileViewController.xib */,
+			);
+			path = ProfileController;
+			sourceTree = "<group>";
+		};
+		4C584FB42758E5A0003F2E9F /* ActivityDetailsController */ = {
+			isa = PBXGroup;
+			children = (
+				4C584FB52758E5D7003F2E9F /* ActivityDetailsViewController.swift */,
+				4C584FB62758E5D7003F2E9F /* ActivityDetailsViewController.xib */,
+			);
+			path = ActivityDetailsController;
+			sourceTree = "<group>";
+		};
 		4C67814C27240DA000EC30F6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4C584FB42758E5A0003F2E9F /* ActivityDetailsController */,
 				4C88B0C6272FCE450076B409 /* ActivityController */,
+				4C584FAB27589F54003F2E9F /* ProfileController */,
+				4C584FA627588D03003F2E9F /* MainController */,
 				4C3A308627225F5600A5EFF0 /* LoginController */,
 				4C3A308527225F3B00A5EFF0 /* RegistrationController */,
 			);
@@ -132,8 +196,8 @@
 		4C88B0C6272FCE450076B409 /* ActivityController */ = {
 			isa = PBXGroup;
 			children = (
-				4C88B0C7272FCEA90076B409 /* ActivityViewController.swift */,
-				4C88B0C8272FCEA90076B409 /* ActivityViewController.xib */,
+				4C584FB027589FD2003F2E9F /* ActivityViewController.swift */,
+				4C584FB127589FD2003F2E9F /* ActivityViewController.xib */,
 			);
 			path = ActivityController;
 			sourceTree = "<group>";
@@ -205,11 +269,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C584FB327589FD3003F2E9F /* ActivityViewController.xib in Resources */,
+				4C584FAF27589F8A003F2E9F /* ProfileViewController.xib in Resources */,
 				4C3A308E27225FB800A5EFF0 /* LoginViewController.xib in Resources */,
 				1DE4E5D1270A5CD0004A30CA /* LaunchScreen.storyboard in Resources */,
+				4C584FA427588888003F2E9F /* ActivityTableViewCell.xib in Resources */,
+				4C584FAA27588DAB003F2E9F /* MainViewController.xib in Resources */,
 				4C3A308A27225FA300A5EFF0 /* RegistrationViewController.xib in Resources */,
-				4C88B0CA272FCEA90076B409 /* ActivityViewController.xib in Resources */,
 				1DE4E5CE270A5CD0004A30CA /* Assets.xcassets in Resources */,
+				4C584FB82758E5D7003F2E9F /* ActivityDetailsViewController.xib in Resources */,
 				1DE4E5CC270A5CCE004A30CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,14 +290,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD5D2BD272AD13700379DC1 /* SignTextField.swift in Sources */,
+				4C584FA927588DAB003F2E9F /* MainViewController.swift in Sources */,
 				1DE4E5C9270A5CCE004A30CA /* ViewController.swift in Sources */,
+				4C584FA327588888003F2E9F /* ActivityTableViewCell.swift in Sources */,
+				4C584FAE27589F8A003F2E9F /* ProfileViewController.swift in Sources */,
 				1DE4E5C5270A5CCE004A30CA /* AppDelegate.swift in Sources */,
-				4C88B0C9272FCEA90076B409 /* ActivityViewController.swift in Sources */,
 				4C88B0CC272FDD760076B409 /* ActivityBaseButton.swift in Sources */,
 				4C3A308927225FA300A5EFF0 /* RegistrationViewController.swift in Sources */,
 				4C67814F2724232300EC30F6 /* BaseButton.swift in Sources */,
 				4C3A308D27225FB800A5EFF0 /* LoginViewController.swift in Sources */,
+				4C584FB72758E5D7003F2E9F /* ActivityDetailsViewController.swift in Sources */,
 				4CD12114272BE4C7002ACB4C /* PasswordTextField.swift in Sources */,
+				4C584FB227589FD3003F2E9F /* ActivityViewController.swift in Sources */,
 				4CD12116272D0A59002ACB4C /* PopUpTextField.swift in Sources */,
 				1DE4E5C7270A5CCE004A30CA /* SceneDelegate.swift in Sources */,
 			);
