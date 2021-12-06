@@ -56,6 +56,9 @@
                         <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                         <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="didTapContinueButton:" destination="-1" eventType="touchUpInside" id="C0B-Qp-2u1"/>
+                    </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PeopleBicycles" translatesAutoresizingMaskIntoConstraints="NO" id="NUz-Kh-UEn">
                     <rect key="frame" x="0.0" y="470.5" width="414" height="389"/>

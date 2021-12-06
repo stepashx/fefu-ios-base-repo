@@ -94,6 +94,9 @@
                                         <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                         <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didTapContinueButton:" destination="-1" eventType="touchUpInside" id="AAS-4A-Emj"/>
+                                    </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Imt-Mj-lNQ">
                                     <rect key="frame" x="18" y="496" width="378" height="96"/>

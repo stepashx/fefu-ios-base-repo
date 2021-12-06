@@ -39,7 +39,7 @@
                                 <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </buttonConfiguration>
                             <connections>
-                                <action selector="didTappedStartButton:" destination="-1" eventType="touchUpInside" id="afX-K4-j74"/>
+                                <action selector="didTapStartButton:" destination="-1" eventType="touchUpInside" id="4Xe-5M-PLS"/>
                             </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="SYo-dZ-snN">

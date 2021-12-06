@@ -12,6 +12,12 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var genderTextField: PopUpTextField!
     
+    @IBAction func didTapContinueButton(_ sender: Any) {
+        let mainViewController = MainViewController(nibName: "MainViewController", bundle: nil)
+        mainViewController.modalPresentationStyle = .fullScreen
+        self.present(mainViewController, animated: true, completion: nil)
+    }
+    
     let gender = ["", "Мужской", "Женский"]
     
     let pickerView = UIPickerView()

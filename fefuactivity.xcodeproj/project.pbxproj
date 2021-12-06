@@ -32,6 +32,8 @@
 		4CD12114272BE4C7002ACB4C /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD12113272BE4C7002ACB4C /* PasswordTextField.swift */; };
 		4CD12116272D0A59002ACB4C /* PopUpTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD12115272D0A58002ACB4C /* PopUpTextField.swift */; };
 		4CD5D2BD272AD13700379DC1 /* SignTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5D2BC272AD13700379DC1 /* SignTextField.swift */; };
+		4CE85FA5275DCD8800794FB8 /* MKMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE85FA3275DCD8800794FB8 /* MKMapViewController.swift */; };
+		4CE85FA6275DCD8800794FB8 /* MKMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE85FA4275DCD8800794FB8 /* MKMapViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		4CD12113272BE4C7002ACB4C /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		4CD12115272D0A58002ACB4C /* PopUpTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpTextField.swift; sourceTree = "<group>"; };
 		4CD5D2BC272AD13700379DC1 /* SignTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTextField.swift; sourceTree = "<group>"; };
+		4CE85FA3275DCD8800794FB8 /* MKMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewController.swift; sourceTree = "<group>"; };
+		4CE85FA4275DCD8800794FB8 /* MKMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MKMapViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,7 @@
 		4C67814C27240DA000EC30F6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4CE85FA2275DCD6300794FB8 /* MKMapController */,
 				4C584FB42758E5A0003F2E9F /* ActivityDetailsController */,
 				4C88B0C6272FCE450076B409 /* ActivityController */,
 				4C584FAB27589F54003F2E9F /* ProfileController */,
@@ -210,6 +215,15 @@
 				4CD12115272D0A58002ACB4C /* PopUpTextField.swift */,
 			);
 			path = TextFields;
+			sourceTree = "<group>";
+		};
+		4CE85FA2275DCD6300794FB8 /* MKMapController */ = {
+			isa = PBXGroup;
+			children = (
+				4CE85FA3275DCD8800794FB8 /* MKMapViewController.swift */,
+				4CE85FA4275DCD8800794FB8 /* MKMapViewController.xib */,
+			);
+			path = MKMapController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +290,7 @@
 				4C584FA427588888003F2E9F /* ActivityTableViewCell.xib in Resources */,
 				4C584FAA27588DAB003F2E9F /* MainViewController.xib in Resources */,
 				4C3A308A27225FA300A5EFF0 /* RegistrationViewController.xib in Resources */,
+				4CE85FA6275DCD8800794FB8 /* MKMapViewController.xib in Resources */,
 				1DE4E5CE270A5CD0004A30CA /* Assets.xcassets in Resources */,
 				4C584FB82758E5D7003F2E9F /* ActivityDetailsViewController.xib in Resources */,
 				1DE4E5CC270A5CCE004A30CA /* Main.storyboard in Resources */,
@@ -298,6 +313,7 @@
 				4C88B0CC272FDD760076B409 /* ActivityBaseButton.swift in Sources */,
 				4C3A308927225FA300A5EFF0 /* RegistrationViewController.swift in Sources */,
 				4C67814F2724232300EC30F6 /* BaseButton.swift in Sources */,
+				4CE85FA5275DCD8800794FB8 /* MKMapViewController.swift in Sources */,
 				4C3A308D27225FB800A5EFF0 /* LoginViewController.swift in Sources */,
 				4C584FB72758E5D7003F2E9F /* ActivityDetailsViewController.swift in Sources */,
 				4CD12114272BE4C7002ACB4C /* PasswordTextField.swift in Sources */,
