@@ -29,9 +29,14 @@ class ActivityViewController: UIViewController {
         activityTableView.isHidden = true
     }
 
-    @IBAction func didTappedStartButton(_ sender: Any) {
-        activityTableView.isHidden = false
-        emptyStateStackView.isHidden = true
+    @IBAction func didTapStartButton(_ sender: Any) {
+//        activityTableView.isHidden = false
+//        emptyStateStackView.isHidden = true
+        
+        let controller = MKMapViewController(nibName: "MKMapViewController", bundle: nil)
+        controller.hidesBottomBarWhenPushed = true
+        
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     /*
