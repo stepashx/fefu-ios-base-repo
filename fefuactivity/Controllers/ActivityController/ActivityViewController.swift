@@ -6,6 +6,12 @@
 //
 
 import UIKit
+import CoreData
+
+struct dataModel {
+    let date: Date
+    var activities: [ActivityTableViewCellModel]
+}
 
 class ActivityViewController: UIViewController {
 
@@ -13,7 +19,7 @@ class ActivityViewController: UIViewController {
     @IBOutlet weak var activityTableView: UITableView!
     @IBOutlet weak var emptyStateStackView: UIStackView!
     
-    let sections = ["Вчера", "Май 2022 года"]
+    private var data = [dataModel]()
     
     let activityCellId = "activityCellId"
     
@@ -28,6 +34,60 @@ class ActivityViewController: UIViewController {
         activityTableView.backgroundColor = .clear
         activityTableView.isHidden = true
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        fetch()
+        self.activityTableView.reloadData()
+    }
+    
+    private func fetch() {
+        let context = FEFUCoreDataContainer.instance.context
+        
+        let activityRequest: NSFetchRequest<CoreDataActivity> = CoreDataActivity.fetchRequest()
+        
+        do {
+            let rawActivities = try context.fetch(activityRequest)
+            
+            let activitiesViewModels: [ActivityTableViewCellModel] = rawActivities.map { rawActivity in
+                
+                let image = UIImage(systemName: "bicycle.circle.fill") ?? UIImage()
+            
+                return ActivityTableViewCellModel(
+                    date: rawActivity.date ?? Date(),
+                    distance: rawActivity.distance,
+                    duration: rawActivity.duration,
+                    icon: image,
+                    type: rawActivity.type ?? "",
+                    startTime: rawActivity.startTime ?? "",
+                    endTime: rawActivity.endTime ?? ""
+                )
+            }
+            
+            let groupedActivitiesByDate = Dictionary(grouping: activitiesViewModels) { activityViewModel in
+                return createDate(activityViewModel.date)
+            }
+            
+            self.data = groupedActivitiesByDate.map { (data, activities) in
+                return dataModel(
+                    date: data,
+                    activities: activities
+                )
+            }
+            
+            emptyStateStackView.isHidden = !data.isEmpty
+            activityTableView.isHidden = data.isEmpty
+        } catch {
+            print(error)
+        }
+    }
+    
+    private func createDate(_ activityDate: Date) -> Date {
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month, .day], from: activityDate)
+        return calendar.date(from: components) ?? Date()
+    }
 
     @IBAction func didTapStartButton(_ sender: Any) {
 //        activityTableView.isHidden = false
@@ -39,25 +99,17 @@ class ActivityViewController: UIViewController {
         navigationController?.pushViewController(controller, animated: true)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
 
 extension ActivityViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        sections.count
+        return data.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return data[section].activities.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -67,14 +119,19 @@ extension ActivityViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
+        cell.addFields(model: data[indexPath.section].activities[indexPath.row])
+        
         return cell
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection
+        section: Int) -> UIView? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
         let label = UILabel()
         
         label.font = .boldSystemFont(ofSize: 22.0)
-        label.text = sections[section]
+        label.text = dateFormatter.string(from: data[section].date)
         
         return label
     }
@@ -91,6 +148,7 @@ extension ActivityViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let activityDetailsController = ActivityDetailsViewController(nibName: "ActivityDetailsViewController", bundle: nil)
+        activityDetailsController.model = data[indexPath.section].activities[indexPath.row]
         
         navigationController?.pushViewController(activityDetailsController, animated: true)
     }
