@@ -11,6 +11,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivityDetailsViewController" customModule="fefuactivity" customModuleProvider="target">
             <connections>
+                <outlet property="distanceLabel" destination="NRX-lV-480" id="P5A-C8-od8"/>
+                <outlet property="durationLabel" destination="0mx-9r-iRc" id="tRT-nA-Shd"/>
+                <outlet property="iconImage" destination="Qk9-ef-RZk" id="e8h-13-up2"/>
+                <outlet property="startAndEndTimeLabel" destination="SCD-Qe-GHb" id="qlD-bZ-XRh"/>
+                <outlet property="timeAgoDownLabel" destination="mVS-Do-rxG" id="ci9-Nq-3zo"/>
+                <outlet property="timeAgoUpperLabel" destination="dfP-uY-m5L" id="cLh-bJ-jbk"/>
+                <outlet property="typeLabel" destination="CES-Bo-jfu" id="lUd-xU-YfB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -107,7 +114,7 @@
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
             <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
-            <point key="canvasLocation" x="139" y="136"/>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
         </view>
     </objects>
     <resources>

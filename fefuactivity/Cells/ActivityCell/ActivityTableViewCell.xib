@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,69 +18,86 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52z-X5-fcD">
-                        <rect key="frame" x="16" y="16" width="288" height="72"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAS-n5-CVK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14.32 км" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vY8-DO-WBb">
-                                <rect key="frame" x="0.0" y="0.0" width="86" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14 часов назад" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6f-BK-RUx">
-                                <rect key="frame" x="180.5" y="54" width="107.5" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2 часа 46 минут" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfa-iv-bVN">
-                                <rect key="frame" x="0.0" y="27" width="120" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicycle.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="f3K-WJ-puw">
-                                <rect key="frame" x="0.0" y="54.5" width="13" height="19"/>
+                            <view contentMode="scaleToFill" id="52z-X5-fcD">
+                                <rect key="frame" x="16" y="11" width="288" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14.32 км" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vY8-DO-WBb">
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14 часов назад" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6f-BK-RUx">
+                                        <rect key="frame" x="180.5" y="54" width="107.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2 часа 46 минут" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfa-iv-bVN">
+                                        <rect key="frame" x="0.0" y="27" width="120" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicycle.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="f3K-WJ-puw">
+                                        <rect key="frame" x="0.0" y="54.5" width="13" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="KQ2-Ra-oGL"/>
+                                            <constraint firstAttribute="width" constant="13" id="fbT-vM-1AU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Велосипед" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9x-jb-eRM">
+                                        <rect key="frame" x="18" y="54" width="78.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="9TN-9F-Ob7"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="KQ2-Ra-oGL"/>
-                                    <constraint firstAttribute="width" constant="13" id="fbT-vM-1AU"/>
+                                    <constraint firstAttribute="trailing" secondItem="O6f-BK-RUx" secondAttribute="trailing" id="62P-jS-9tX"/>
+                                    <constraint firstAttribute="bottom" secondItem="O6f-BK-RUx" secondAttribute="bottom" id="Brk-0F-e7y"/>
+                                    <constraint firstItem="o9x-jb-eRM" firstAttribute="leading" secondItem="f3K-WJ-puw" secondAttribute="trailing" constant="5" id="LKO-qh-RRA"/>
+                                    <constraint firstItem="vY8-DO-WBb" firstAttribute="top" secondItem="52z-X5-fcD" secondAttribute="top" id="TH5-CN-dSV"/>
+                                    <constraint firstItem="Tfa-iv-bVN" firstAttribute="centerY" secondItem="52z-X5-fcD" secondAttribute="centerY" id="XHK-T0-sp8"/>
+                                    <constraint firstItem="f3K-WJ-puw" firstAttribute="leading" secondItem="52z-X5-fcD" secondAttribute="leading" id="ZJN-Rs-maG"/>
+                                    <constraint firstAttribute="bottom" secondItem="o9x-jb-eRM" secondAttribute="bottom" id="hWM-dO-fxj"/>
+                                    <constraint firstItem="vY8-DO-WBb" firstAttribute="leading" secondItem="52z-X5-fcD" secondAttribute="leading" id="meP-xe-nwC"/>
+                                    <constraint firstAttribute="bottom" secondItem="f3K-WJ-puw" secondAttribute="bottom" constant="-2" id="nae-Ta-wpb"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Велосипед" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9x-jb-eRM">
-                                <rect key="frame" x="18" y="54" width="78.5" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                         </subviews>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="O6f-BK-RUx" secondAttribute="trailing" id="62P-jS-9tX"/>
-                            <constraint firstAttribute="bottom" secondItem="O6f-BK-RUx" secondAttribute="bottom" id="Brk-0F-e7y"/>
-                            <constraint firstItem="o9x-jb-eRM" firstAttribute="leading" secondItem="f3K-WJ-puw" secondAttribute="trailing" constant="5" id="LKO-qh-RRA"/>
-                            <constraint firstItem="vY8-DO-WBb" firstAttribute="top" secondItem="52z-X5-fcD" secondAttribute="top" id="TH5-CN-dSV"/>
-                            <constraint firstItem="Tfa-iv-bVN" firstAttribute="centerY" secondItem="52z-X5-fcD" secondAttribute="centerY" id="XHK-T0-sp8"/>
-                            <constraint firstItem="f3K-WJ-puw" firstAttribute="leading" secondItem="52z-X5-fcD" secondAttribute="leading" id="ZJN-Rs-maG"/>
-                            <constraint firstAttribute="bottom" secondItem="o9x-jb-eRM" secondAttribute="bottom" id="hWM-dO-fxj"/>
-                            <constraint firstItem="vY8-DO-WBb" firstAttribute="leading" secondItem="52z-X5-fcD" secondAttribute="leading" id="meP-xe-nwC"/>
-                            <constraint firstAttribute="bottom" secondItem="f3K-WJ-puw" secondAttribute="bottom" constant="-2" id="nae-Ta-wpb"/>
-                        </constraints>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="52z-X5-fcD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="7al-Rd-W9C"/>
-                    <constraint firstAttribute="trailing" secondItem="52z-X5-fcD" secondAttribute="trailing" constant="16" id="Cja-uC-60a"/>
-                    <constraint firstAttribute="bottom" secondItem="52z-X5-fcD" secondAttribute="bottom" constant="16" id="NsT-nK-Iix"/>
-                    <constraint firstItem="52z-X5-fcD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="xIN-In-kYo"/>
+                    <constraint firstItem="mAS-n5-CVK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HcU-dE-NsO"/>
+                    <constraint firstItem="mAS-n5-CVK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eaf-7H-gqX"/>
+                    <constraint firstAttribute="trailing" secondItem="mAS-n5-CVK" secondAttribute="trailing" id="eok-xO-IbF"/>
+                    <constraint firstAttribute="bottom" secondItem="mAS-n5-CVK" secondAttribute="bottom" constant="15" id="y7x-1Y-Lzp"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="activityView" destination="H2p-sc-9uM" id="SW2-6R-wIT"/>
+                <outlet property="activityView" destination="mAS-n5-CVK" id="3x7-ct-nIf"/>
+                <outlet property="distanceLabel" destination="vY8-DO-WBb" id="iVj-yf-Qfm"/>
+                <outlet property="durationLabel" destination="Tfa-iv-bVN" id="uNK-DJ-DoU"/>
+                <outlet property="iconImage" destination="f3K-WJ-puw" id="tJL-40-Szx"/>
+                <outlet property="timeAgoLabel" destination="O6f-BK-RUx" id="oYN-0P-O5I"/>
+                <outlet property="typeLabel" destination="o9x-jb-eRM" id="OnC-F3-vxN"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="132.58928571428572"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="bicycle.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

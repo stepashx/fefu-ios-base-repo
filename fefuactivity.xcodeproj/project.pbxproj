@@ -28,12 +28,16 @@
 		4C584FB72758E5D7003F2E9F /* ActivityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C584FB52758E5D7003F2E9F /* ActivityDetailsViewController.swift */; };
 		4C584FB82758E5D7003F2E9F /* ActivityDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C584FB62758E5D7003F2E9F /* ActivityDetailsViewController.xib */; };
 		4C67814F2724232300EC30F6 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C67814E2724232300EC30F6 /* BaseButton.swift */; };
+		4C7FDA22275EF5380046EE3C /* ActivityTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7FDA20275EF5380046EE3C /* ActivityTypeCollectionViewCell.swift */; };
+		4C7FDA23275EF5380046EE3C /* ActivityTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C7FDA21275EF5380046EE3C /* ActivityTypeCollectionViewCell.xib */; };
 		4C88B0CC272FDD760076B409 /* ActivityBaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C88B0CB272FDD760076B409 /* ActivityBaseButton.swift */; };
 		4CD12114272BE4C7002ACB4C /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD12113272BE4C7002ACB4C /* PasswordTextField.swift */; };
 		4CD12116272D0A59002ACB4C /* PopUpTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD12115272D0A58002ACB4C /* PopUpTextField.swift */; };
 		4CD5D2BD272AD13700379DC1 /* SignTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5D2BC272AD13700379DC1 /* SignTextField.swift */; };
 		4CE85FA5275DCD8800794FB8 /* MKMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE85FA3275DCD8800794FB8 /* MKMapViewController.swift */; };
 		4CE85FA6275DCD8800794FB8 /* MKMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE85FA4275DCD8800794FB8 /* MKMapViewController.xib */; };
+		4CE85FA9275DEFF900794FB8 /* FEFUCoreDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE85FA8275DEFF900794FB8 /* FEFUCoreDataContainer.swift */; };
+		4CE85FAC275DF03700794FB8 /* fefuactivity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CE85FAA275DF03700794FB8 /* fefuactivity.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,12 +64,16 @@
 		4C584FB52758E5D7003F2E9F /* ActivityDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailsViewController.swift; sourceTree = "<group>"; };
 		4C584FB62758E5D7003F2E9F /* ActivityDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityDetailsViewController.xib; sourceTree = "<group>"; };
 		4C67814E2724232300EC30F6 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		4C7FDA20275EF5380046EE3C /* ActivityTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		4C7FDA21275EF5380046EE3C /* ActivityTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityTypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		4C88B0CB272FDD760076B409 /* ActivityBaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityBaseButton.swift; sourceTree = "<group>"; };
 		4CD12113272BE4C7002ACB4C /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		4CD12115272D0A58002ACB4C /* PopUpTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpTextField.swift; sourceTree = "<group>"; };
 		4CD5D2BC272AD13700379DC1 /* SignTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTextField.swift; sourceTree = "<group>"; };
 		4CE85FA3275DCD8800794FB8 /* MKMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewController.swift; sourceTree = "<group>"; };
 		4CE85FA4275DCD8800794FB8 /* MKMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MKMapViewController.xib; sourceTree = "<group>"; };
+		4CE85FA8275DEFF900794FB8 /* FEFUCoreDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FEFUCoreDataContainer.swift; sourceTree = "<group>"; };
+		4CE85FAB275DF03700794FB8 /* fefuactivity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fefuactivity.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,7 @@
 		1DE4E5C3270A5CCE004A30CA /* fefuactivity */ = {
 			isa = PBXGroup;
 			children = (
+				4CE85FA7275DEF3C00794FB8 /* CoreData+Helper */,
 				4C584FA027587305003F2E9F /* Cells */,
 				4CD5D2BB272AD0FD00379DC1 /* TextFields */,
 				4C67814D2724230900EC30F6 /* Buttons */,
@@ -109,6 +118,7 @@
 				1DE4E5CD270A5CD0004A30CA /* Assets.xcassets */,
 				1DE4E5CF270A5CD0004A30CA /* LaunchScreen.storyboard */,
 				1DE4E5D2270A5CD0004A30CA /* Info.plist */,
+				4CE85FAA275DF03700794FB8 /* fefuactivity.xcdatamodeld */,
 			);
 			path = fefuactivity;
 			sourceTree = "<group>";
@@ -134,6 +144,7 @@
 		4C584FA027587305003F2E9F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				4C7FDA1F275EF4FE0046EE3C /* ActivityTypeCell */,
 				4C584FA527588891003F2E9F /* ActivityCell */,
 			);
 			path = Cells;
@@ -198,6 +209,15 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		4C7FDA1F275EF4FE0046EE3C /* ActivityTypeCell */ = {
+			isa = PBXGroup;
+			children = (
+				4C7FDA20275EF5380046EE3C /* ActivityTypeCollectionViewCell.swift */,
+				4C7FDA21275EF5380046EE3C /* ActivityTypeCollectionViewCell.xib */,
+			);
+			path = ActivityTypeCell;
+			sourceTree = "<group>";
+		};
 		4C88B0C6272FCE450076B409 /* ActivityController */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +244,14 @@
 				4CE85FA4275DCD8800794FB8 /* MKMapViewController.xib */,
 			);
 			path = MKMapController;
+			sourceTree = "<group>";
+		};
+		4CE85FA7275DEF3C00794FB8 /* CoreData+Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4CE85FA8275DEFF900794FB8 /* FEFUCoreDataContainer.swift */,
+			);
+			path = "CoreData+Helper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +320,7 @@
 				4C3A308A27225FA300A5EFF0 /* RegistrationViewController.xib in Resources */,
 				4CE85FA6275DCD8800794FB8 /* MKMapViewController.xib in Resources */,
 				1DE4E5CE270A5CD0004A30CA /* Assets.xcassets in Resources */,
+				4C7FDA23275EF5380046EE3C /* ActivityTypeCollectionViewCell.xib in Resources */,
 				4C584FB82758E5D7003F2E9F /* ActivityDetailsViewController.xib in Resources */,
 				1DE4E5CC270A5CCE004A30CA /* Main.storyboard in Resources */,
 			);
@@ -309,8 +338,11 @@
 				1DE4E5C9270A5CCE004A30CA /* ViewController.swift in Sources */,
 				4C584FA327588888003F2E9F /* ActivityTableViewCell.swift in Sources */,
 				4C584FAE27589F8A003F2E9F /* ProfileViewController.swift in Sources */,
+				4CE85FA9275DEFF900794FB8 /* FEFUCoreDataContainer.swift in Sources */,
 				1DE4E5C5270A5CCE004A30CA /* AppDelegate.swift in Sources */,
+				4C7FDA22275EF5380046EE3C /* ActivityTypeCollectionViewCell.swift in Sources */,
 				4C88B0CC272FDD760076B409 /* ActivityBaseButton.swift in Sources */,
+				4CE85FAC275DF03700794FB8 /* fefuactivity.xcdatamodeld in Sources */,
 				4C3A308927225FA300A5EFF0 /* RegistrationViewController.swift in Sources */,
 				4C67814F2724232300EC30F6 /* BaseButton.swift in Sources */,
 				4CE85FA5275DCD8800794FB8 /* MKMapViewController.swift in Sources */,
@@ -523,6 +555,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4CE85FAA275DF03700794FB8 /* fefuactivity.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4CE85FAB275DF03700794FB8 /* fefuactivity.xcdatamodel */,
+			);
+			currentVersion = 4CE85FAB275DF03700794FB8 /* fefuactivity.xcdatamodel */;
+			path = fefuactivity.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1DE4E5B9270A5CCE004A30CA /* Project object */;
 }
