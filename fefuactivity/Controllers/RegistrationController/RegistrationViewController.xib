@@ -12,6 +12,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationViewController" customModule="fefuactivity" customModuleProvider="target">
             <connections>
                 <outlet property="genderTextField" destination="cPJ-u2-aMF" id="vtF-A6-jCx"/>
+                <outlet property="loginTextField" destination="Zj2-lb-J6c" id="aP2-TF-2NQ"/>
+                <outlet property="nameOrNicknameTextField" destination="ftk-pg-H6b" id="QkB-Sk-Wih"/>
+                <outlet property="passwordTextField" destination="VER-Nq-uPA" id="lmM-fd-TI3"/>
+                <outlet property="repeatPasswordTextField" destination="AqK-7U-2bh" id="rPt-XF-Db7"/>
                 <outlet property="scrollView" destination="ZIG-rP-CyY" id="xYN-GX-As9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
